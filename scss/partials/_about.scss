@@ -1,0 +1,114 @@
+.about {
+  padding-top: 260px;
+  padding-bottom: 90px;
+}
+
+.about__wrapper {
+  display: flex;
+  margin-bottom: 230px;
+}
+
+.about__block {
+  width: 540px;
+  margin-right: 110px;
+}
+
+.about__title {
+  margin-bottom: 60px;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.about__desc {
+  margin-bottom: 60px;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.about__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.about__item {
+  display: flex;
+  align-items: center;
+  &::before {
+    content: "";
+    display: inline-block;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: $accent;
+    border-radius: 10px 0px;
+  }
+}
+
+.about__option {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.about__image {
+  position: relative;
+  margin-top: 60px;
+  &::before {
+    position: absolute;
+    top: 66px;
+    left: 95px;
+    z-index: -1;
+    content: " ";
+    width: 350px;
+    height: 400px;
+    background-image: url(../../images/about-img-secondary.jpg);
+    opacity: 0.4;
+    border-radius: 30px 0;
+  }
+}
+
+.about__img {
+  border-radius: 30px 0;
+}
+
+.comment {
+  position: relative;
+  padding: 50px 510px 50px 80px;
+  border: 1px solid grey;
+  border-radius: 30px 0px;
+}
+
+.comment__box {
+  position: relative;
+  padding-bottom: 25px;
+  border-bottom: 1px solid grey;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 103px;
+    height: 92px;
+    background-image: url(../../images/quotes.png);
+    opacity: 0.3;
+  }
+}
+
+.comment__link {
+  margin-top: 25px;
+  font-weight: 700;
+  color: $accent;
+  transition: color 250ms $cubic;
+
+  &:focus,
+  &:hover {
+    color: $white;
+  }
+}
+
+.comment__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(25%, -50%);
+  border-radius: 30px 0px;
+}

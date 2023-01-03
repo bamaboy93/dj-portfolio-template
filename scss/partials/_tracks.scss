@@ -1,0 +1,21 @@
+.tracks {
+  padding: 90px 0;
+}
+
+.tracks__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tracks__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  background-color: $accent;
+  outline: 15px solid #7a66cc58;
+  box-shadow: $main-box-shadow;
+}

@@ -52,6 +52,8 @@ img {
 
 .nav-menu {
   padding: 16px 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .fixed-top {
@@ -60,6 +62,11 @@ img {
   right: 0;
   left: 0;
   z-index: 1030;
+}
+
+.is-scrolling {
+  padding: 0;
+  background-color: #7a66cc;
 }
 
 .nav {

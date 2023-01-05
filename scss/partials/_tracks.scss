@@ -19,3 +19,67 @@
   outline: 15px solid #7a66cc58;
   box-shadow: $main-box-shadow;
 }
+
+.tracks__title {
+  margin-bottom: 60px;
+  font-weight: 700;
+  font-size: 48px;
+
+  &--icon {
+    margin-right: 20px;
+  }
+}
+
+.tracks__list {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.tracks__item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &:first-child {
+    color: $accent;
+  }
+}
+
+.tracks__num {
+  margin-right: 17px;
+  font-weight: 700;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.tracks__follow {
+  display: flex;
+}
+.tracks__follow--title {
+  margin-right: 25px;
+  font-weight: 600;
+  font-size: 24px;
+}
+.tracks__follow--link {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  color: $white;
+  transition: color 250ms $cubic;
+  &:focus,
+  &:hover {
+    color: $accent;
+  }
+  &:focus .tracks__follow--icon,
+  &:hover .tracks__follow--icon {
+    color: $accent;
+  }
+}
+.tracks__follow--icon {
+  margin-right: 10px;
+  fill: currentColor;
+  transition: color 250ms $cubic;
+}

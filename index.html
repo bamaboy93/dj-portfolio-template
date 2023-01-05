@@ -18,7 +18,7 @@
 
     <title>Document</title>
   </head>
-  <body data-spy="scroll" data-target="#navbar">
+  <body>
     <div class="nav-menu fixed-top">
       <div class="container">
         <nav class="nav">
@@ -33,22 +33,22 @@
 
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="#">About</a>
+              <a class="nav__link" href="#about">About</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">News</a>
+              <a class="nav__link" href="#news">News</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Music</a>
+              <a class="nav__link" href="#music">Music</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Media</a>
+              <a class="nav__link" href="#media">Media</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Tours</a>
+              <a class="nav__link" href="#tours">Tours</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Contacts</a>
+              <a class="nav__link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -66,170 +66,408 @@
           width="1110"
           height="27"
         />
-        <ul class="header__list">
-          <li class="header__item">
-            <img
-              class="header__item--img"
-              src="./images/hero-img.jpg"
-              alt=""
-              width="350"
-              height="300"
-            />
-            <div class="header__item--box">
-              <p class="header__item--desc">
-                Working on my upcoming full-lenth album that`s releasing later
-                this year.
-              </p>
-            </div>
+        <a id="news"></a>
+        <ul class="news-list">
+          <li class="news-list__item">
+            <a class="news-list__item--link" href="#">
+              <figure class="news-list__item--figure">
+                <img
+                  class="news-list__item--img"
+                  src="./images/hero-img.jpg"
+                  alt=""
+                  width="350"
+                  height="300"
+                />
+                <figcaption class="news-list__item--caption">
+                  Working on my upcoming full-lenth album that`s releasing later
+                  this year.
+                </figcaption>
+              </figure>
+            </a>
           </li>
-          <li class="header__item">
-            <img
-              class="header__item--img"
-              src="./images/hero-img1.jpg"
-              alt=""
-              width="350"
-              height="300"
-            />
-            <div class="header__item--box">
-              <p class="header__item--desc">
-                Halloween vibes. <br />
-                Listen my new track!
-              </p>
-            </div>
+          <li class="news-list__item">
+            <a class="news-list__item--link" href="#">
+              <figure class="news-list__item--figure">
+                <img
+                  class="news-list__item--img"
+                  src="./images/hero-img1.jpg"
+                  alt=""
+                  width="350"
+                  height="300"
+                />
+                <figcaption class="news-list__item--caption">
+                  Halloween vibes. <br />
+                  Listen my new track!
+                </figcaption>
+              </figure>
+            </a>
           </li>
-          <li class="header__item">
-            <img
-              class="header__item--img"
-              src="./images/hero-img2.jpg"
-              alt=""
-              width="350"
-              height="300"
-            />
-            <div class="header__item--box">
-              <p class="header__item--desc">
-                War For Love is OUT NOW!! Stream it here!
-              </p>
-            </div>
+          <li class="news-list__item">
+            <a class="news-list__item--link" href="#">
+              <figure class="news-list__item--figure">
+                <img
+                  class="news-list__item--img"
+                  src="./images/hero-img2.jpg"
+                  alt=""
+                  width="350"
+                  height="300"
+                />
+                <figcaption class="news-list__item--caption">
+                  War For Love is OUT NOW!! Stream it here!
+                </figcaption>
+              </figure>
+            </a>
           </li>
         </ul>
       </div>
     </header>
 
-    <!-- About -->
-    <section class="about">
-      <div class="container">
-        <div class="about__wrapper">
-          <div class="about__block">
-            <h2 class="about__title">Bright Lights</h2>
-            <p class="about__desc">
-              Bright Lights is a multi-Grammy nominated singer, songwriter, DJ
-              and record producer. She has written for numerous pop stars
-              including Britney Spears, Justin Bieber, Usher and Beyoncé. Her
-              catalog has amassed over 1 billion streams worldwide. More than
-              100 million of those streams can be attributed to her artist
-              career and include such hits as Porter Robinson's "Language,"
-              3LAU's "How You Love Me" and her own single "Runaway." She was
-              also a featured vocalist on Zedd's #1 Clarity album. Her latest
-              music video, "Put It Down," reached 1 million streams in the first
-              week, releasing independently. Bright Lights is currently in the
-              studio working on a self-produced album slated for release in
-              2020.
-            </p>
-            <ul class="about__list">
-              <li class="about__item">
-                <p class="about__option">Based in: Los Angeles</p>
-              </li>
-              <li class="about__item">
-                <p class="about__option">Founded in 2011</p>
-              </li>
-              <li class="about__item">
-                <p class="about__option">Genre: #DancePop</p>
-              </li>
-              <li class="about__item">
-                <p class="about__option">Label: 333 Recordings</p>
-              </li>
-            </ul>
+    <main>
+      <!-- About -->
+      <section class="about">
+        <div class="container">
+          <a id="about"></a>
+          <div class="about__wrapper">
+            <div class="about__block">
+              <h2 class="about__title">
+                <svg class="about__title--icon" width="64" height="31">
+                  <use href="./images/sprite.svg#icon-accent"></use></svg
+                >Bright Lights
+              </h2>
+              <p class="about__desc">
+                Bright Lights is a multi-Grammy nominated singer, songwriter, DJ
+                and record producer. She has written for numerous pop stars
+                including Britney Spears, Justin Bieber, Usher and Beyoncé. Her
+                catalog has amassed over 1 billion streams worldwide. More than
+                100 million of those streams can be attributed to her artist
+                career and include such hits as Porter Robinson's "Language,"
+                3LAU's "How You Love Me" and her own single "Runaway." She was
+                also a featured vocalist on Zedd's #1 Clarity album. Her latest
+                music video, "Put It Down," reached 1 million streams in the
+                first week, releasing independently. Bright Lights is currently
+                in the studio working on a self-produced album slated for
+                release in 2020.
+              </p>
+              <ul class="about__list">
+                <li class="about__item">
+                  <p class="about__option">Based in: Los Angeles</p>
+                </li>
+                <li class="about__item">
+                  <p class="about__option">Founded in 2011</p>
+                </li>
+                <li class="about__item">
+                  <p class="about__option">Genre: #DancePop</p>
+                </li>
+                <li class="about__item">
+                  <p class="about__option">Label: 333 Recordings</p>
+                </li>
+              </ul>
+            </div>
+            <div class="about__image">
+              <img
+                class="about__img"
+                src="./images/about-img.jpg"
+                alt="singer photo"
+                width="350"
+                height="400"
+              />
+            </div>
           </div>
-          <div class="about__image">
+          <div class="comment">
+            <div class="comment__box">
+              <p class="comment__text">
+                “In an age where mainstream music is designed to be as easily
+                consumed as possible, listening to Bright Lights is refreshing,
+                to say the least. Her sound is perfect for radio but complex
+                enough to separate her from other pop newcomers.”
+              </p>
+            </div>
+            <a class="comment__link" href="">PopULove.net</a>
             <img
-              class="about__img"
-              src="./images/about-img.jpg"
+              class="comment__img"
+              src="./images/about-comment-img.jpg"
               alt="singer photo"
-              width="350"
-              height="400"
+              width="370"
+              height="483"
             />
           </div>
         </div>
-        <div class="comment">
-          <div class="comment__box">
-            <p class="comment__text">
-              “In an age where mainstream music is designed to be as easily
-              consumed as possible, listening to Bright Lights is refreshing, to
-              say the least. Her sound is perfect for radio but complex enough
-              to separate her from other pop newcomers.”
-            </p>
+      </section>
+      <!-- Tracks -->
+      <section class="tracks">
+        <div class="container tracks__wrapper">
+          <a id="music"></a>
+          <div class="tracks__image">
+            <img
+              class="tracks__img"
+              src="./images/track-img.png"
+              alt="singer photo"
+              width="350"
+              height="350"
+            />
           </div>
-          <a class="comment__link" href="">PopULove.net</a>
-          <img
-            class="comment__img"
-            src="./images/about-comment-img.jpg"
-            alt="singer photo"
-            width="370"
-            height="483"
-          />
+          <div>
+            <h2 class="tracks__title">
+              <svg class="tracks__title--icon" width="64" height="31">
+                <use href="./images/sprite.svg#icon-accent"></use></svg
+              >Last tracks
+            </h2>
+            <img src="./images/track.png" alt="" width="540" height="27" />
+            <ul class="tracks__list">
+              <li class="tracks__item">
+                <span class="tracks__num">01</span>
+                <p class="tracks__track">
+                  3LAU, Bright Lights — How You Love Me
+                </p>
+              </li>
+              <li class="tracks__item">
+                <span class="tracks__num">02</span>
+                <p class="tracks__track">
+                  Bright Lights, Kaleena Zanders, Kandy — War For Love
+                </p>
+              </li>
+              <li class="tracks__item">
+                <span class="tracks__num">03</span>
+                <p class="tracks__track">
+                  Pink Is Punk, Benny Benassi, Bright Lights — Ghost
+                </p>
+              </li>
+              <li class="tracks__item">
+                <span class="tracks__num">04</span>
+                <p class="tracks__track">
+                  Hardwell, Dyro, Bright Lights — Never Say Goodbye
+                </p>
+              </li>
+              <li class="tracks__item">
+                <span class="tracks__num">05</span>
+                <p class="tracks__track">
+                  Zeds Dead, Dirtyphonics, Bright Lights — Where Are You Now
+                </p>
+              </li>
+              <li class="tracks__item">
+                <span class="tracks__num">06</span>
+                <p class="tracks__track">
+                  Zedd, Bright Lights — Follow You Down
+                </p>
+              </li>
+            </ul>
+            <div class="tracks__follow">
+              <h3 class="tracks__follow--title">Follow me:</h3>
+              <a class="tracks__follow--link" href="/">
+                <svg class="tracks__follow--icon" width="30" height="30">
+                  <use href="./images/sprite.svg#icon-spotify"></use></svg
+                >Spotify
+              </a>
+              <a class="tracks__follow--link" href="/">
+                <svg class="tracks__follow--icon" width="30" height="30">
+                  <use href="./images/sprite.svg#icon-apple"></use></svg
+                >iTunes
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- Tracks -->
-    <section class="tracks">
-      <div class="container tracks__wrapper">
-        <div class="tracks__image">
-          <img
-            class="tracks__img"
-            src="./images/track-img.png"
-            alt="singer photo"
-            width="350"
-            height="350"
-          />
+      </section>
+      <!-- Gallery -->
+      <section class="gallery">
+        <div class="container">
+          <h2 class="visually-hidden">Gallery</h2>
+          <a id="media"></a>
+          <div class="gallery">
+            <div class="gallery__column">
+              <a href="#" class="gallery__link">
+                <figure class="gallery__thumb">
+                  <img
+                    src="./images/gallery-img4.jpg"
+                    alt="club performance photo"
+                    width="255"
+                    height="500"
+                    class="gallery__image"
+                  />
+                </figure>
+              </a>
+            </div>
+            <div class="gallery__column">
+              <div class="gallery__row">
+                <a href="#" class="gallery__link">
+                  <figure class="gallery__thumb">
+                    <img
+                      src="./images/gallery-img2.jpg"
+                      alt="singer photo"
+                      width="255"
+                      height="235"
+                      class="gallery__image"
+                    />
+                  </figure>
+                </a>
+                <a href="#" class="gallery__link">
+                  <figure class="gallery__thumb">
+                    <img
+                      src="./images/gallery-img3.jpg"
+                      alt="singer photo"
+                      width="255"
+                      height="235"
+                      class="gallery__image"
+                    />
+                  </figure>
+                </a>
+              </div>
+              <a href="#" class="gallery__link">
+                <figure class="gallery__thumb">
+                  <img
+                    src="./images/gallery-img.jpg"
+                    alt="EDC Las Vegas Mainstage"
+                    width="540"
+                    height="235"
+                    class="gallery__image"
+                  />
+                  <figcaption class="gallery__caption">
+                    EDC Las Vegas Mainstage
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="gallery__column">
+              <a href="#" class="gallery__link">
+                <figure class="gallery__thumb">
+                  <img
+                    src="./images/gallery-img1.jpg"
+                    alt="artwork"
+                    width="255"
+                    height="500"
+                    class="gallery__image"
+                  />
+                </figure>
+              </a>
+            </div>
+          </div>
         </div>
-        <div>
-          <h2>Last tracks</h2>
-          <img src="./images/track.png" alt="" width="540" height="27" />
-          <ul>
-            <li>
-              <span>01</span>
-              <p>3LAU, Bright Lights — How You Love Me</p>
+      </section>
+      <!-- Tour -->
+      <section class="tour">
+        <div class="container">
+          <h2 class="visually-hidden">Tour</h2>
+          <a id="tours"></a>
+          <ul class="tour__list">
+            <li class="tour__item">
+              <img
+                class="tour__img"
+                src="./images/tour-img.jpg"
+                alt="concert photo"
+                width="350"
+                height="280"
+              />
+              <div class="tour__info">
+                <p class="tour__city">Chandler, AZ</p>
+                <p class="tour__place">The Park at Wild Horse Pass</p>
+                <p class="tour__date">Apr 02 2021</p>
+                <a class="tour__link" href="#">tickets</a>
+              </div>
             </li>
-            <li>
-              <span>02</span>
-              <p>Bright Lights, Kaleena Zanders, Kandy — War For Love</p>
+            <li class="tour__item">
+              <img
+                class="tour__img"
+                src="./images/tour-img2.jpg"
+                alt="concert photo"
+                width="350"
+                height="280"
+              />
+              <div class="tour__info">
+                <p class="tour__city">Ibiza, IBZ</p>
+                <p class="tour__place">Swag Ibiza Club</p>
+                <p class="tour__date">Jul 08 2021</p>
+                <a class="tour__link" href="#">tickets</a>
+              </div>
             </li>
-            <li>
-              <span>03</span>
-              <p>Pink Is Punk, Benny Benassi, Bright Lights — Ghost</p>
-            </li>
-            <li>
-              <span>04</span>
-              <p>Hardwell, Dyro, Bright Lights — Never Say Goodbye</p>
-            </li>
-            <li>
-              <span>05</span>
-              <p>Zeds Dead, Dirtyphonics, Bright Lights — Where Are You Now</p>
-            </li>
-            <li>
-              <span>06</span>
-              <p>Zedd, Bright Lights — Follow You Down</p>
+            <li class="tour__item">
+              <img
+                class="tour__img"
+                src="./images/tour-img3.jpg"
+                alt="concert photo"
+                width="350"
+                height="280"
+              />
+              <div class="tour__info">
+                <p class="tour__city">Ibiza, IBZ</p>
+                <p class="tour__place">El Swing Ibiza</p>
+                <p class="tour__date">Jul 10 2021</p>
+                <a class="tour__link" href="#">tickets</a>
+              </div>
             </li>
           </ul>
-          <div>
-            <h3>Follow me:</h3>
-            <p>Spotify</p>
-            <p>iTunes</p>
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
+    <footer class="footer">
+      <div class="container">
+        <a id="contacts"></a>
+        <div class="footer__logo">
+          <img src="./images/logo.png" alt="logo" width="60" height="60" />
+          <img
+            class="footer__logo--name"
+            src="./images/logo-name.png"
+            alt="logo"
+            width="143"
+            height="42"
+          />
+        </div>
+        <ul class="contact-list">
+          <li class="contact-list__item">
+            <p class="contact-list__subtitle">Artist Management:</p>
+            <p class="contact-list__subtitle">EMAIL:</p>
+          </li>
+          <li class="contact-list__item">
+            <p class="contact-list__info">Jake Henny</p>
+            <p class="contact-list__info">jakehenny@mail.com</p>
+          </li>
+        </ul>
+        <ul class="socials-list">
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="#">
+              <svg class="socials-list__icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-apple"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="#">
+              <svg class="socials-list__icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-spotify"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="#">
+              <svg class="socials-list__icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="#">
+              <svg class="socials-list__icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="#">
+              <svg class="socials-list__icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="#">
+              <svg class="socials-list__icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="footer__copyrights">© 2023 DJ bright lights.</p>
+      </div>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.6.3.min.js"
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="

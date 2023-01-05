@@ -1,0 +1,97 @@
+.footer {
+  padding-top: 90px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+
+  &--name {
+    margin-left: 20px;
+    margin-top: 16px;
+  }
+}
+
+.contact-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.contact-list__item:first-child {
+  text-align: right;
+}
+.contact-list__item:last-child {
+  text-align: left;
+}
+
+.contact-list__subtitle {
+  min-width: 200px;
+  margin-right: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.contact-list__info {
+  text-transform: uppercase;
+}
+
+.socials-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.socials-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: #2c2c2c;
+  border-radius: 50%;
+  box-shadow: $secondary-box-shadow;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.socials-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: $accent;
+  border-radius: 50%;
+
+  color: $white;
+
+  transition: background-color 250ms $cubic;
+
+  &:focus,
+  &:hover {
+    background-color: $white;
+  }
+
+  &:focus .socials-list__icon,
+  &:hover .socials-list__icon {
+    color: $accent;
+  }
+}
+
+.socials-list__icon {
+  fill: currentColor;
+  transition: color 250ms $cubic;
+}
+
+.footer__copyrights {
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
